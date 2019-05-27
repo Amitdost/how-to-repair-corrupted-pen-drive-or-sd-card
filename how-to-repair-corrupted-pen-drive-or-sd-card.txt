@@ -1,0 +1,16 @@
+# how-to-repair-corrupted-pen-drive-or-sd-card
+Repair corrupted Pen Drive or SD card using CMD
+
+This process involves Windows command prompt which is commonly known as CMD. In this, you have to enter some CMD commands, and Windows will forcefully format your corrupted pen driveSD card.
+
+1. Connect the corrupted pen drive or SD card to your computer.
+2. Hover your mouse over the Start button and Right-click.
+3. Click Command Prompt (Admin). A CMD window will open.
+4. Type diskpart and press Enter.
+5. Type list disk and press Enter. A list of all the storage devices connected to your computer will be displayed.
+6. Type select disk the number of your disk and press Enter. (Example select disk 1). Important Make sure you enter the number correctly. Otherwise, you may format your internal hard drive. You can type list disk again to check whether you are going correctly. There will be a star (asterisk symbol) before the name of the selected disk.
+7. Type clean and press Enter.
+8. Type create partition primary and hit Enter.
+9. Type active.
+10.Type select partition 1.
+11.Type format fs=fat32 and press Enter. The format process will finish in a few minutes. You can write NTFS instead of fat32 if you want to carry files larger than 4 gigabytes. Don’t close the CMD until the work is finished.
